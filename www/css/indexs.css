@@ -1,0 +1,121 @@
+/*
+  ========================================
+  General styles
+  ========================================
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 16px "Ubuntu", sans-serif;
+  background: #ecf0f1;
+}
+
+ul,
+li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+header {
+  text-align: center;
+  background: #1341ad;
+  padding: 10px 0;
+  margin: 0;
+  border: 0;
+}
+header h1 {
+  font-size: 54px;
+  font-weight: 300;
+  margin: 35px 0 25px;
+  color: #fff;
+}
+header h1 span {
+  font-weight: 700;
+}
+header h2 {
+  color: #bdc3c7;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 22px;
+}
+header h2 span {
+  font-weight: 600;
+}
+
+/*
+  ========================================
+  Insert
+  ========================================
+*/
+.app-insert {
+  width: 460px;
+  margin: 20px auto;
+}
+.app-insert input {
+  width: 100%;
+  background: #e5e8f1;
+  border: none;
+  border-bottom: 1px solid #bdc3c7;
+  outline: none;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.app-insert input:focus {
+  background: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+  transition: all 0.5s ease;
+}
+
+/*
+  ========================================
+  List
+  ========================================
+*/
+.app-list {
+  width: 460px;
+  margin: 20px auto;
+  padding: 0;
+}
+.task {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #333;
+
+  transition: all 0.2s ease;
+}
+.task:hover {
+  background: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+.task:hover .remove-task {
+  opacity: 1;
+}
+.task-complete {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #95a5a6;
+}
+.remove-task {
+  opacity: 0;
+  float: right;
+  text-decoration: none;
+  color: #7f8c8d;
+
+  transition: all 0.2s ease;
+}
+.remove-task:hover {
+  color: #333;
+}
